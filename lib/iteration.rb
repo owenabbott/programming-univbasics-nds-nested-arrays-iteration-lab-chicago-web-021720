@@ -36,12 +36,15 @@ end
 
 def total_even_pairs(src)
   total = 0
-  counter = 0 
-    for src.each do 
-      if src[counter][0] and src[counter][1] % 2 == 0 
+    for i in src do
+      if i[0] and i[1] % 2 == 0 
+        total += 2
+      elsif i[0] % 2 == 0 and i[1] % 2 != 0
         total += 1
-      if 
-
+      elsif i[0] % 2 != 0 and i[1] % 2 == 0 
+        total += 1
+    end
+  return total
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # if both numbers in the pair are even, then add both those numbers to the
   # total
