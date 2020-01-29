@@ -19,8 +19,8 @@ end
 def find_greater_pair(src)
   new_array = []
   counter = 0 
-  for i in src
-    if i[counter][0] > i[counter][1] do
+  for i in src do
+    if i[counter][0] > i[counter][1]
       new_array.push i[counter][0]
       counter +=1
     else
