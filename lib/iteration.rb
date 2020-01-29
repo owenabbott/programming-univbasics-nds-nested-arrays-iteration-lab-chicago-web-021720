@@ -44,6 +44,7 @@ def total_even_pairs(src)
       elsif i[0] % 2 != 0 and i[1] % 2 == 0 
         total += 1
     end
+  end
   return total
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # if both numbers in the pair are even, then add both those numbers to the
