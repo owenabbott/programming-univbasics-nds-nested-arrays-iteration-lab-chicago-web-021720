@@ -37,9 +37,8 @@ end
 def total_even_pairs(src)
   total = 0
     for i in src do
-      if i[0] and i[1] % 2 == 0 
+      if i[0] % 2 ==0 and i[1] % 2 == 0 
         total += i[0] + i[1]
-      next
       elsif i[0] % 2 == 0 and i[1] % 2 != 0
         total += i[0]
       elsif i[0] % 2 != 0 and i[1] % 2 == 0 
