@@ -21,10 +21,10 @@ def find_greater_pair(src)
   counter = 0 
   while new_array.count < src.count do
     if src[counter][0] > src[counter][1]
-      new_array.push i[counter][0]
+      new_array.push src[counter][0]
       counter +=1
     else
-      new_array.push i[counter][1]
+      new_array.push src[counter][1]
       counter+=1
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
